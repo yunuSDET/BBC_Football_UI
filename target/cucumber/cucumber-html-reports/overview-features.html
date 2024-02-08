@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                56,
-                0,
-                0,
+                22,
+                11,
+                30,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 56) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 63) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,8 +106,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                14,
-                0
+                5,
+                11
             ],
             backgroundColor: [
                 "#00B000",
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 14) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 16) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -153,8 +153,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   1,
-                   0
+                   0,
+                   3
                ],
                backgroundColor: [
                 "#00B000",
@@ -187,7 +187,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -228,7 +228,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>07 &#350;ub 2024, 22:58</td>
+      <td>08 &#350;ub 2024, 16:59</td>
     </tr>
   </tbody>
 </table>
@@ -325,52 +325,86 @@ $(document).ready(function() {
       <tr>
         <td class="tagname"><a href="report-feature_1764534172.html">As a QA, I would like to verify all negative scenarios for login</a></td>
 
-        <td      class="passed"    >56</td>
-        <td >0</td>
-        <td >0</td>
+        <td      class="passed"    >22</td>
+        <td      class="failed"    >9</td>
+        <td     class="skipped"   >25</td>
         <td >0</td>
         <td >0</td>
         <td class="total">56</td>
 
-        <td  class="passed"    >14</td>
-        <td >0</td>
+        <td  class="passed"    >5</td>
+        <td  class="failed"    >9</td>
         <td class="total">14</td>
 
-        <td class="duration" data-value="86642119700">1:26.642</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="60185156300">1:0.185</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_1_3494881830.html">As a business user, I would like to make a record of all teams which are playing today</a></td>
+
+        <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >2</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="5000400">0.005</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_2_1073735683.html">As a sports user, I would like to read about all articles related to sports</a></td>
+
+        <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">4</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="18999900">0.018</td>
+        <td class="failed">Failed</td>
       </tr>
   </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>56</td>
+      <td>22</td>
+      <td>11</td>
+      <td>30</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>56</td>
+      <td>63</td>
 
-      <td>14</td>
-      <td>0</td>
-      <td>14</td>
+      <td>5</td>
+      <td>11</td>
+      <td>16</td>
 
-      <td class="duration">1:26.642</td>
-      <td>1</td>
+      <td class="duration">1:0.209</td>
+      <td>3</td>
     </tr>
     <tr>
       <td></td>
-      <td>100.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
+      <td>34.92%</td>
+      <td>17.46%</td>
+      <td>47.62%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>100.00%</td>
+      <td>31.25%</td>
+      <td>68.75%</td>
+      <td></td>
+      <td></td>
       <td>0.00%</td>
-      <td></td>
-      <td></td>
-      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

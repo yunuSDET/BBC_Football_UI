@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Feature: As a business user, I would like to make a record of all teams which are playing today</title>
+<title>Cucumber Reports  - Feature: As a sports user, I would like to read about all articles related to sports</title>
 
 </head>
 <body>
@@ -126,19 +126,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">As a business user, I would like to make a record of all teams which are playing today</td>
+          <td class="tagname">As a sports user, I would like to read about all articles related to sports</td>
           <td >0</td>
           <td      class="failed"    >1</td>
-          <td     class="skipped"   >2</td>
+          <td     class="skipped"   >3</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">3</td>
+          <td class="total">4</td>
 
           <td >0</td>
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="5000400">0.005</td>
+          <td class="duration" data-value="18999900">0.018</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -173,7 +173,7 @@ $(document).ready(function() {
 
 <div class="brief failed">
   <span class="keyword indention">Feature</span>
-  <span class="name">As a business user, I would like to make a record of all teams which are playing today</span>
+  <span class="name">As a sports user, I would like to read about all articles related to sports</span>
 
 
 </div>
@@ -189,14 +189,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.018</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Output all team names with a match today. If there are no matches today, output a message to convey this.</span>
+  <span class="name">Use the search option to find all articles related to &lsquo;sports&rsquo;. Output the first heading and the last heading returned on the page.</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -262,9 +262,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
-  <span class="name">user lands on <span class="argument">&quot;Fixtures&quot;</span> page</span>
+  <span class="name">user lands on <span class="argument">&quot;Homepage&quot;</span> page</span>
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.018</span>
 
 </div>
 
@@ -317,7 +317,7 @@ $(document).ready(function() {
 Build info: version: '4.14.1', revision: '03f8ede370'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e00d02247ccc07bd52943e5d1ef874f9, get {url=https://www.bbc.com/sport/football/scores-fixtures}]
+Command: [e00d02247ccc07bd52943e5d1ef874f9, get {url=https://www.bbc.com/}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54945}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54945/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: e00d02247ccc07bd52943e5d1ef874f9
 	at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
@@ -332,7 +332,7 @@ Session ID: e00d02247ccc07bd52943e5d1ef874f9
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
 	at com.bbc.step_definitions.ScoresFixturesStepDef.user_lands_on_page(ScoresFixturesStepDef.java:21)
-	at &#10045;.user lands on &quot;Fixtures&quot; page(file:///C:/Users/User/IdeaProjects/BBC_Football_UI/src/test/resources/features/ScoresFixtures.feature:6)
+	at &#10045;.user lands on &quot;Homepage&quot; page(file:///C:/Users/User/IdeaProjects/BBC_Football_UI/src/test/resources/features/Search.feature:5)
 </pre>
       </div>
     </div>
@@ -386,7 +386,7 @@ Session ID: e00d02247ccc07bd52943e5d1ef874f9
 
 <div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
-  <span class="name">user sees all team names with a match today</span>
+  <span class="name">user clicks search box</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -475,9 +475,9 @@ Session ID: e00d02247ccc07bd52943e5d1ef874f9
       <div class="step">
 
 
-<div class="brief step-name-But skipped">
-  <span class="keyword indention">But</span>
-  <span class="name">if there is no matches today display a message</span>
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">user types <span class="argument">&quot;sports&quot;</span> into search box and hits the enter</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -563,14 +563,21 @@ Session ID: e00d02247ccc07bd52943e5d1ef874f9
   </div>
 
       </div>
-  </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">list first and last headings on the page</span>
+
+  <span class="lead-duration duration">0.000</span>
+
 </div>
 
 
 
-
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-11">
+  <div class="inner-level hooks-step-before">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-11">
 
 <div class="brief failed">
   <span class="keyword indention">Hooks</span>
@@ -582,13 +589,97 @@ Session ID: e00d02247ccc07bd52943e5d1ef874f9
 
     </div>
 
-    <div id="after-11" class="inner-level collapse collapsable-details  in ">
+    <div id="before-11" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.bbc.step_definitions.Hooks.setupStep()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-12">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-12" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.bbc.step_definitions.Hooks.afterStep()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-13">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-13" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">com.bbc.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.022</span>
 
           </div>
 
@@ -596,10 +687,10 @@ Session ID: e00d02247ccc07bd52943e5d1ef874f9
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-14">
           <a>Error message</a>
       </div>
-      <div id="msg-12" class="collapse collapsable-details  in ">
+      <div id="msg-14" class="collapse collapsable-details  in ">
         <pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
   (failed to check if window was closed: disconnected: not connected to DevTools)
   (Session info: chrome=121.0.6167.140)

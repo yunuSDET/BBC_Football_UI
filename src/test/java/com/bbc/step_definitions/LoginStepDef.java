@@ -19,12 +19,17 @@ public class LoginStepDef {
        while (true){
            try {
                loginPage=new LoginPage();
+
                loginPage.signInLink.click();
+
                break;
            }catch (RuntimeException e){
+               if(!Driver.getDriver().getTitle().contains("Homepage")) break;
                Driver.getDriver().navigate().refresh();
+
                System.out.println("Page is refreshed to avoid the popup");
            }
+
        }
 
     }
